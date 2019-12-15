@@ -1,0 +1,184 @@
+Reading dataset
+
+
+Step 1: Data cleansing
+sepal length is unique: True
+sepal width is unique: True
+petal length is unique: True
+petal width is unique: True
+New Feature 1 is unique: True
+New Feature 2 is unique: True
+class is unique: True
+Data cleansing complete
+
+
+Step 2: Two sets of new features (total 8 features)
+     generated 1  generated 2
+0       5.536398     3.234637
+1       5.567845     3.083746
+2       5.313135     3.377129
+3       6.107996     3.067460
+4       4.982181     3.208856
+5       5.947196     3.244081
+6       6.268864     3.513213
+7       5.264211     3.795176
+8       6.320476     2.739627
+9       5.353386     4.048839
+10      5.981055     3.272263
+11      5.585404     3.389238
+12      6.559018     3.363973
+13      5.432976     3.308803
+14      6.265283     3.103848
+15      6.655481     2.994480
+16      5.766294     2.443332
+17      5.870825     3.151109
+18      6.698211     2.465425
+19      6.376794     2.809577
+20      7.050725     2.770548
+21      5.919079     3.570326
+22      6.432497     2.799722
+23      6.374992     3.900984
+24      5.460663     2.913222
+25      6.910863     3.165797
+26      5.360818     3.543337
+27      6.010420     2.342098
+28      6.286067     2.806774
+29      6.953617     3.154893
+..           ...          ...
+120     7.255790     2.929676
+121     6.412876     3.838865
+122     6.039137     3.341888
+123     5.885830     3.177687
+124     5.432431     3.157821
+125     5.843694     2.680636
+126     6.162841     3.188932
+127     6.064677     3.268286
+128     6.077003     2.776250
+129     5.789060     3.349346
+130     5.730442     3.302212
+131     6.735361     3.196757
+132     7.004201     3.026013
+133     6.065792     2.833811
+134     7.419639     3.091072
+135     5.294153     2.538693
+136     5.683542     3.306813
+137     5.726628     2.617581
+138     6.954759     3.263259
+139     6.485170     2.668736
+140     6.649316     3.346844
+141     5.915828     3.528070
+142     5.208565     3.242051
+143     6.152947     3.252126
+144     6.167542     3.177988
+145     6.021319     2.429734
+146     6.296731     3.110872
+147     6.473022     2.981818
+148     6.146553     2.620853
+149     5.605298     3.410268
+
+[150 rows x 2 columns]
+
+
+
+Step 3: Removing outliers using z score function from scipy library
+Check dataframe for where z score criteria is not met
+(array([15], dtype=int64), array([1], dtype=int64))
+Created new dataframe after performing feature preprocessing
+
+
+Step 4: Ranking top two features from the set of 6 features. This outlines two methods, 1. chi-square test and 2. f test. Both methods yield same result
+Top two features: 
+['petal length', 'petal width']
+
+
+
+Step 5: Reducing dimentionality to two features using PCA. See plot
+
+
+
+Step 6a: Expectation maximization. See plot.
+
+
+
+Step 6b: Linear Discriminant Analysis. See plot.
+
+
+
+Step 6c: Probabilistic neural network using neupy library for iris classification.
+Starting classification of iris dataset
+Test #1 : Guessed 15 out of 15
+Accuracy
+
+1.0
+
+
+Test #2 : Guessed 15 out of 15
+Accuracy
+
+1.0
+
+
+Test #3 : Guessed 14 out of 15
+Accuracy
+
+0.9333333333333333
+
+
+Test #4 : Guessed 15 out of 15
+Accuracy
+
+1.0
+
+
+Test #5 : Guessed 15 out of 15
+Accuracy
+
+1.0
+
+
+Test #6 : Guessed 15 out of 15
+Accuracy
+
+1.0
+
+
+Test #7 : Guessed 15 out of 15
+Accuracy
+
+1.0
+
+
+Test #8 : Guessed 15 out of 15
+Accuracy
+
+1.0
+
+
+Test #9 : Guessed 15 out of 15
+Accuracy
+
+1.0
+
+
+Test #10: Guessed 14 out of 14
+Accuracy
+
+1.0
+
+
+
+
+
+Step 6d: Support Vector machine classification.
+Classification report and analysis using support vector machine
+              precision    recall  f1-score   support
+
+           1       1.00      1.00      1.00        10
+           2       1.00      1.00      1.00        10
+           3       1.00      1.00      1.00        10
+
+    accuracy                           1.00        30
+   macro avg       1.00      1.00      1.00        30
+weighted avg       1.00      1.00      1.00        30
+
+Program finished

@@ -1,0 +1,36 @@
+1. Data Cleansing (use the iris data for cleansing.csv)
+
+    a. Checked if every value is unique
+    b. Checked if every value is not a string
+    c. Checked if every value is greater than zero
+    d. Removed rows where NAN was found
+
+Cleansing data was pretty simple. There werent that many dirty dataset rows/columns and if they were NAN they were dropped.
+If b or c is caught, then exception handling catches this eassertion xception and stops execution
+ 
+2. Generates two sets of features from the original 4 features to end up with a total of 8 featres
+
+    - Used first two features to generate two new features. Used min, max, mean shifting, covariance, normalization to generate two new features
+
+3. Performs Feature Preprocessing using z score method
+
+    - Removed any outliers using the Z-score function from scipy. We notice that only one outlier was found and that outlier was removed. The z threshold was set to 3. 
+
+4. Ranks the 6 set of features to determine which are the two top features using chi-square test and f test
+
+    - Using chi square test we ranked the datasets. The chi-squared test is used to determine whether there is a significant difference 
+    between the expected frequencies and the observed frequencies in one or more categories. 
+    - An F-test is any statistical test in which the test statistic has an F-distribution under the null hypothesis
+    - The top two features found were petal length and petal width. 
+
+5. Reduce the dimensionality to two features using PCA 
+    - Using PCA I reduced the features to 2 features and plotted the classification in PCA.jpg. We see a clear classification of the three iris classes. 
+
+6. Uses the following Machine Learning techniques, I classified the three class Iris data:
+    (a) Expectation Maximization - The EM plot shows clear classification distinction between the three classes in EM.jpg
+    (b) Linear Discriminant Analysis - This analysis also shows clear classification of the three classes in LDA.jpg
+    (c) Neural Network Method (Probabilistic NN) -  Using neupy algorithm libraries inbuilt PNN method, I was able to split the dataset in chunks of 15 datasets. 
+    The algorithm had almost perfect classification results of a Probability of 1 or 100% accuracy. Except one chunk where it was 93.3% which is still good. 
+    The shows that the dataset is very clean and the model did a good job classifying the dataset into the three classes. 
+    (d) Support Vector Machine - SVM also did a great job classifying the dataset into its three classes as we see in the classification report where the precision 
+    is pretty much 100%. Once again we the model did a great job and the data is clean. 
