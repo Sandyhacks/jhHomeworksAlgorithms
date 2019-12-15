@@ -1,0 +1,14 @@
+Algorithms for Data Science
+-Sandesh Iyer
+
+Question 4
+a.	The plot tells us that the number of data science and machine learning publications have been increasing manifold each year
+b.	Columns required are
+	    - From Citation information: Author, Author ID, Year
+	    - From Bibliographical information: Affiliations, and maybe publisher and editor
+c.	Data cleansing
+	    - Authors may have to be cleaned up since some publications have no authors mentioned
+	    - If author name doesn’t exist, author id wouldn’t exist either so that would have to be cleaned up too for indexing purposes
+	    - Cited by column has NAN values which needs to be cleaned up
+	    - DOI column has NAN values which needs to be cleaned up
+	    - Document Type column for certain publications has no source information available and needs to be cleaned up

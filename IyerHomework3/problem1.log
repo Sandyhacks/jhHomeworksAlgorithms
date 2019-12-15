@@ -1,0 +1,30 @@
+Trimmed mean value
+sepal length (cm) 5.8083333333333345
+sepal width (cm) 3.0433333333333334
+petal length (cm) 3.7600000000000002
+petal width (cm) 1.1841666666666668
+
+
+       Petal length  Petal Width  Sepal Length  Sepal Width
+count    150.000000   150.000000    150.000000   150.000000
+mean       5.843333     3.057333      3.758000     1.199333
+std        0.828066     0.435866      1.765298     0.762238
+min        4.300000     2.000000      1.000000     0.100000
+25%        5.100000     2.800000      1.600000     0.300000
+50%        5.800000     3.000000      4.350000     1.300000
+75%        6.400000     3.300000      5.100000     1.800000
+max        7.900000     4.400000      6.900000     2.500000
+
+SKEW
+Petal length    0.314911
+Petal Width     0.318966
+Sepal Length   -0.274884
+Sepal Width    -0.102967
+dtype: float64
+
+KURTOSIS
+Petal length   -0.552064
+Petal Width     0.228249
+Sepal Length   -1.402103
+Sepal Width    -1.340604
+dtype: float64

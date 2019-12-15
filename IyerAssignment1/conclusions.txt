@@ -1,0 +1,30 @@
+Conclusions:
+
+1. The dataset contains 3 classes of 50 instances each
+2. Each instance refers to a type of Iris plant.
+3. Five attributes/features were collecting for each plant instance where class represnts the plant instance
+4. For the four before sort scatter plots for the features 'petallength, petalwidth, sepallength, sepalwidth' we can see that each plant instance/class
+   takes on a paricular range of values which is easily noticeable by the colors on the graph using the 'class' feature as legend.
+5. In order to accurately determine if any of the five sorted features can separate the three plant types, the datasets can be sorted and then plotted once again
+6. From the after sort plots for features 'petallength, petalwidth, sepallength, sepalwidth' we can see that the best distinction is seen in the 'petallength' and 
+   'petalwidth' graphs. This makes sense as if we do a quick sort of the features to determine the ranges we receive the below.
+
+-----------------------------------------------------------------------------------
+           | Septal_length(cm) | Septal_width (cm) | Petal_length(cm) |	Petal_width	 
+-----------------------------------------------------------------------------------
+Setosa	   |      4.3-5.8	   |   2.3-4.4	       |    1-1.9	      |    0.1-0.6	 
+ 	 	 	 	 	 
+veriso 	   |       4.9-7	   |     2-3.4	       |     3-5.1	      |      1-1.8	 
+ 	 	 	 	 	 
+Virginica  |       4.9-7.9	   |     2.2-3.8       |	4.5-6.9	      |    1.4-2.5
+-----------------------------------------------------------------------------------
+
+% Summary Statistics:
+%  	           Min  Max   Mean    SD   Class Correlation
+%    sepal length: 4.3  7.9   5.84  0.83    0.7826   
+%     sepal width: 2.0  4.4   3.05  0.43   -0.4194
+%    petal length: 1.0  6.9   3.76  1.76    0.9490  (high!)
+%     petal width: 0.1  2.5   1.20  0.76    0.9565  (high!)
+
+7. Just by taking a quick look along with the summary statistics included with the dataset we can say that we can probably acheive better distinction in sort plots with petallength and petalwidth
+   and this claim is justified from the sorted plots generated our program 

@@ -1,0 +1,28 @@
+Loading iris dataset form iris.arff file using loadarff module
+Loading iris dataset into pandas dataframe
+Plotting before and after sort visualizations for each feature of iris dataset
+
+-----SEPALLENGTH-----
+Before sort visualization for sepallength feature
+Sorting...
+After sort visualization for sepallength feature
+
+-----SEPALWIDTH-----
+Before sort visualization for sepalwidth feature
+Sorting...
+After sort visualization for sepalwidth feature
+
+-----PETALLENGTH-----
+Before sort visualization for petallength feature
+Sorting...
+After sort visualization for petallength feature
+
+-----PETALWIDTH-----
+Before sort visualization for petalwidth feature
+Sorting...
+After sort visualization for petalwidth feature
+
+PLEASE SEE OUTPUTS FOLDER FOR BEFORE AND AFTER SORT VISUALIZATIONS OF IRIS DATASET
+
+Exiting...
+Program finished in 5.446534872055054 seconds
